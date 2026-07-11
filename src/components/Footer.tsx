@@ -61,13 +61,9 @@ const Footer = () => {
             );
           })}
         </div>
-        <p className="text-sm text-[#D7E2EA]/50">
-          &copy; {new Date().getFullYear()} mehidyPT. All rights reserved.
-        </p>
       </div>
     </footer>
   );
 };
 
 export default Footer;
-

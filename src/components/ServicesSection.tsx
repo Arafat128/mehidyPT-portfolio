@@ -11,25 +11,25 @@ const services = [
     number: '02',
     name: 'Tools & automation',
     description:
-      'Building custom tools, scripts, and automations that remove repetitive work, streamline workflows, and save teams real time.',
+      'Building custom tools, scripts and automations that remove repetitive work, streamline workflows and save teams real time.',
   },
   {
     number: '03',
     name: 'AI agents',
     description:
-      'Designing and shipping AI agents that reason, use tools, and automate complex tasks — tailored to real product and workflow needs.',
+      'Designing and shipping AI agents that reason, use tools and automate complex tasks — tailored to real product and workflow needs.',
   },
   {
     number: '04',
     name: 'Discord bots',
     description:
-      'Developing custom Discord bots for moderation, engagement, and automation — keeping communities active, organized, and running smoothly.',
+      'Developing custom Discord bots for moderation, engagement and automation — keeping communities active, organized and running smoothly.',
   },
   {
     number: '05',
     name: 'Regional/global community management',
     description:
-      'Managing and growing regional and global communities — moderating discussions, running events, and keeping members engaged across every platform.',
+      'Managing and growing regional and global communities — moderating discussions, running events and keeping members engaged across every platform.',
   },
   {
     number: '06',
@@ -47,13 +47,13 @@ const services = [
     number: '08',
     name: 'Compete for gaming events',
     description:
-      'Representing the brand in competitive gaming events and tournaments, bringing skill, visibility, and energy to every match.',
+      'Representing the brand in competitive gaming events and tournaments, bringing skill, visibility and energy to every match.',
   },
   {
     number: '09',
     name: 'Work as support team',
     description:
-      'Supporting users as part of the team, answering questions, resolving issues quickly, and making sure everyone has a smooth experience.',
+      'Supporting users as part of the team, answering questions, resolving issues quickly and making sure everyone has a smooth experience.',
   },
 ];
 
@@ -108,3 +108,4 @@ const ServicesSection = () => {
 };
 
 export default ServicesSection;
+

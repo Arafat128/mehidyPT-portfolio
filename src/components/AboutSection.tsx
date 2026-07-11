@@ -6,7 +6,7 @@ const BASE =
   'https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7';
 
 const aboutText =
-  "Three+ years deep in Web3, building web apps, tools, AI agents, and Discord bots, creating content and helping projects grow communities that actually care. I'm drawn to teams that want to put their best face forward and build something people genuinely want to be part of. Always learning, always shipping. Let's build something incredible together.";
+  "Three+ years deep in Web3, building web apps, tools, AI agents and Discord bots, creating content and helping projects grow communities that actually care. I'm drawn to teams that want to put their best face forward and build something people genuinely want to be part of. Always learning, always shipping. Let's build something incredible together.";
 
 const AboutSection = () => {
   return (
@@ -99,5 +99,6 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+
 
 
