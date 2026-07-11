@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  font-family: 'Kanit', sans-serif;
+}
+
+html,
+body {
+  background-color: #0c0c0c;
+}
+
+#root {
+  background: transparent;
+}
+
+/* Fixed background layer (framed look: panels scroll over it) */
+.site-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-color: #0c0c0c;
+  background-image: url('/assets/bg-field.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.hero-heading {
+  background: linear-gradient(180deg, #646973 0%, #bbccd7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
