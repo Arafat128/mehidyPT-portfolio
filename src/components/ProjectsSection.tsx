@@ -29,6 +29,14 @@ const projects: Project[] = [
     col1Image2: '/assets/hf-hero.jpg',
     col2Image: '/assets/hf-logo.jpg',
   },
+  {
+    number: '04',
+    name: 'Surf',
+    href: 'https://asksurf.ai/?r=Perseus',
+    col1Image1: '/assets/surf-home.png',
+    col1Image2: '/assets/surf-signal-map.png',
+    col2Image: '/assets/surf-skill-banner.jfif',
+  },
 ];
 
 const ProjectsSection = () => {

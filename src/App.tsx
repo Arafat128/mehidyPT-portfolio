@@ -2,6 +2,8 @@ import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import ServicesSection from './components/ServicesSection';
 import ProjectsSection from './components/ProjectsSection';
+import BuildSection from './components/BuildSection';
+import ContentsSection from './components/ContentsSection';
 import Footer from './components/Footer';
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
       <AboutSection />
       <ServicesSection />
       <ProjectsSection />
+      <BuildSection />
+      <ContentsSection />
       <Footer />
     </main>
   );
