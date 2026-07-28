@@ -4,7 +4,8 @@ import ContactButton from './ContactButton';
 
 const navLinks = [
   { label: 'About', href: '#about' },
-  { label: 'Projects', href: '#projects' },
+  { label: 'Contribution', href: '#contribution' },
+  { label: 'My Projects', href: '#my-projects' },
   { label: 'Contact', href: 'https://x.com/its_perseus_1', external: true },
 ];
 
@@ -19,7 +20,7 @@ const HeroSection = () => {
         as="nav"
         delay={0}
         y={-20}
-        className="relative z-20 flex justify-between px-6 md:px-10 pt-6 md:pt-8"
+        className="relative z-20 flex items-center justify-between gap-2 px-4 pt-6 sm:gap-4 sm:px-6 md:px-10 md:pt-8"
       >
         {navLinks.map((link) => (
           <a
@@ -28,7 +29,7 @@ const HeroSection = () => {
             {...(link.external
               ? { target: '_blank', rel: 'noopener noreferrer' }
               : {})}
-            className="text-white font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] transition-opacity duration-200 hover:opacity-70"
+            className="whitespace-nowrap text-[0.65rem] font-medium uppercase tracking-wide text-white transition-opacity duration-200 hover:opacity-70 sm:text-sm sm:tracking-wider md:text-lg lg:text-[1.4rem]"
             style={{ textShadow: '0 2px 8px rgba(0,0,0,0.45)' }}
           >
             {link.label}

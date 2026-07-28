@@ -57,7 +57,7 @@ const builds: Build[] = [
 const BuildSection = () => {
   return (
     <section
-      id="build"
+      id="my-projects"
       className="relative z-10 bg-[#0C0C0C] px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32"
     >
       <FadeIn delay={0} y={40}>
@@ -65,7 +65,7 @@ const BuildSection = () => {
           className="hero-heading font-black uppercase leading-none tracking-tight text-center mb-8 sm:mb-10 md:mb-12"
           style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}
         >
-          Build
+          My Projects
         </h2>
       </FadeIn>
 
