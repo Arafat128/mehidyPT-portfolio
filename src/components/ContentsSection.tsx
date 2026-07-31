@@ -54,7 +54,7 @@ const ContentsSection = () => {
           className="hero-heading font-black uppercase leading-none tracking-tight text-center mb-8 sm:mb-10 md:mb-12"
           style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}
         >
-          Contens
+          Contents
         </h2>
       </FadeIn>
 
