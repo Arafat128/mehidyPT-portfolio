@@ -52,6 +52,20 @@ const builds: Build[] = [
       'Routing uses Sepolia Uniswap v3 SwapRouter02 0x3bFA4769FB09eefC5a80d6E87c3B9C650f7Ae48E for demo swaps and LI.FI Diamond 0x1231DEB6f5749EF6cE6943a275A1D3E7486F4EaE for mainnet-ready swaps/bridges; Sui is send-only.',
     ],
   },
+  {
+    number: '04',
+    name: 'VoiceSense PD',
+    href: 'https://github.com/Arafat128/VoiceSense-PD',
+    display: 'github.com/Arafat128/VoiceSense-PD',
+    description:
+      "An explainable machine-learning research app for voice-based Parkinson's disease screening with live microphone or audio upload workflows and English and Bangla analysis modes.",
+    details: [
+      'The Streamlit voice studio normalizes recordings in memory, extracts clinical acoustic features and explains cues that favor PD, healthy or uncertain results.',
+      'A feature lab supports UCI Parkinsons English and BenSParX Bengali data with subject-aware Random Forest and RBF-SVM models, saved metrics and sample validation.',
+      'The live model uses a conservative three-band policy: healthy at about 42% or below, uncertain in the middle and possible PD only at about 72% or above.',
+      'Built with Python, Streamlit, scikit-learn, librosa, Praat Parselmouth, pandas and SciPy. It is research screening support only, not a medical diagnosis.',
+    ],
+  },
 ];
 
 const BuildSection = () => {
@@ -78,7 +92,7 @@ const BuildSection = () => {
         </p>
       </FadeIn>
 
-      <div className="mx-auto grid max-w-7xl gap-5 sm:gap-6 lg:grid-cols-3">
+      <div className="mx-auto grid max-w-7xl gap-5 sm:gap-6 md:grid-cols-2">
         {builds.map((build, index) => (
           <FadeIn key={build.number} delay={index * 0.1} y={30}>
             <a
