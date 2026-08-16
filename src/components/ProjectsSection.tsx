@@ -37,6 +37,14 @@ const projects: Project[] = [
     col1Image2: '/assets/surf-signal-map.png',
     col2Image: '/assets/surf-skill-banner.jfif',
   },
+  {
+    number: '05',
+    name: 'Axis Robotics',
+    href: 'https://hub.axisrobotics.ai/login?invite_code=2r0ovkFJ',
+    col1Image1: '/assets/axis-robotics-game.jpg',
+    col1Image2: '/assets/axis-robotics-seed.jpg',
+    col2Image: '/assets/axis-robotics-logo.jpg',
+  },
 ];
 
 const ProjectsSection = () => {
