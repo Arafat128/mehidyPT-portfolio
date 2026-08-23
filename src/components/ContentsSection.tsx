@@ -2,6 +2,12 @@ import { useEffect } from 'react';
 import FadeIn from './FadeIn';
 
 const posts = [
+  'https://x.com/its_perseus_1/status/2091271414666182990?s=20',
+  'https://x.com/its_perseus_1/status/2091054507212013878?s=20',
+  'https://x.com/its_perseus_1/status/2090681228198547714?s=20',
+  'https://x.com/its_perseus_1/status/2090406436870443206?s=20',
+  'https://x.com/its_perseus_1/status/2090173977461404067?s=20',
+  'https://x.com/its_perseus_1/status/2089352459735175411?s=20',
   'https://x.com/its_perseus_1/status/2088718886082601332?s=20',
   'https://x.com/its_perseus_1/status/2088362615412277531?s=20',
   'https://x.com/its_perseus_1/status/2088324102042108193?s=20',
