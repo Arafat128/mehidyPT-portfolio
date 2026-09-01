@@ -15,14 +15,6 @@ const projects: Project[] = [
   },
   {
     number: '02',
-    name: 'Spot Zero',
-    href: 'https://spotzero.tartalabs.io/',
-    col1Image1: '/assets/sz-banner.webp',
-    col1Image2: '/assets/sz-kagari.webp',
-    col2Image: '/assets/sz-group.webp',
-  },
-  {
-    number: '03',
     name: 'HertzFlow',
     href: 'https://www.hertzflow.xyz/',
     col1Image1: '/assets/hf-banner.jpg',
@@ -30,7 +22,7 @@ const projects: Project[] = [
     col2Image: '/assets/hf-logo.jpg',
   },
   {
-    number: '04',
+    number: '03',
     name: 'Surf',
     href: 'https://asksurf.ai/?r=Perseus',
     col1Image1: '/assets/surf-home.png',
@@ -38,12 +30,20 @@ const projects: Project[] = [
     col2Image: '/assets/surf-skill-banner.jfif',
   },
   {
-    number: '05',
+    number: '04',
     name: 'Axis Robotics',
     href: 'https://hub.axisrobotics.ai/login?invite_code=2r0ovkFJ',
     col1Image1: '/assets/axis-robotics-game.jpg',
     col1Image2: '/assets/axis-robotics-seed.jpg',
     col2Image: '/assets/axis-robotics-logo.jpg',
+  },
+  {
+    number: '05',
+    name: 'Spot Zero',
+    href: 'https://spotzero.tartalabs.io/',
+    col1Image1: '/assets/sz-banner.webp',
+    col1Image2: '/assets/sz-kagari.webp',
+    col2Image: '/assets/sz-group.webp',
   },
 ];
 
