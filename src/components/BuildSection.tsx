@@ -16,12 +16,13 @@ const builds: Build[] = [
     href: 'https://rite-woad.vercel.app/',
     display: 'rite-woad.vercel.app',
     description:
-      'Pay-per-prompt crypto research on Ritual Testnet 1979 with Surf AI reports, on-chain seals, Telegram unlock alerts, Rite Radar data agents and an auto-funded bounty pool.',
+      'Pay-per-prompt crypto research on Ritual Testnet with Surf AI reports, on-chain seals, Radar agents and an auto-funded bounty pool.',
     details: [
-      'Research costs 0.005 RIT per prompt; fees split 50% treasury and 50% BountyPool.',
-      'Persistent Radar agents deploy for 0.1 RIT; Sovereign agents deploy for 0.01 RIT and die after 3 sealed ticks.',
-      'Agent ticks cost 0.005 RIT from the agent balance and can watch token price, fear and greed, news, stablecoin peg, gas, whale stress and Ritual network pulse streams.',
-      'Live contracts: ResearchDesk 0xd3469a23b2a08b237bc6c0522845eb1b508e5352, RadarAgent 0x50a3fb54aa1289546a0be2d6b29d689bb2dd5f6f, BountyPool 0xbc4bc83298950cbda52837cd806d41ad7c3c36bf and Treasury 0xd3309Bf2E2D1F451132dbC34Dc5908C442903458.',
+      '0.005 RIT per prompt, split 50/50 between treasury and bounty pool',
+      'Radar agents at 0.1 RIT; Sovereign agents at 0.01 RIT for 3 sealed ticks',
+      'Agents watch price, fear & greed, news, peg, gas, whales and Ritual pulse',
+      'Telegram unlock alerts when sealed research is ready',
+      'Live contracts: ResearchDesk, RadarAgent, BountyPool and Treasury',
     ],
   },
   {
@@ -30,12 +31,13 @@ const builds: Build[] = [
     href: 'https://waap-research.vercel.app/',
     display: 'waap-research.vercel.app',
     description:
-      'A testnet-first Web3 dashboard built on the Human Wallet WaaP SDK for seedless email, phone, Google, Twitter or Discord login across EVM chains and Sui.',
+      'Seedless Web3 dashboard on Human Wallet WaaP for receive, send, swap and bridge across EVM chains and Sui, with preview before every signature.',
     details: [
-      'Receive, send, multi-send up to 25 recipients, swap, bridge and run capped repeat actions with preview and confirmation before every signature.',
-      'LI.FI routes show provider, output, gas, fees, ETA and minimum received; scheduled execution is opt-in and repeat tools stay passphrase-gated.',
-      'Supports Sepolia, Base Sepolia and Arbitrum Sepolia first, plus clearly labeled Ethereum, Base, Polygon, Arbitrum, Optimism and Sui mainnets.',
-      'Security includes route validation, ERC20 approval allowlists, Sui sender checks, same-origin and CSRF checks, rate limits, local-only history and hashed unique-user stats.',
+      'Login with email, phone, Google, X or Discord — no seed phrase',
+      'Receive, send, multi-send up to 25 wallets, swap and bridge',
+      'LI.FI quotes show provider, output, gas, fees, ETA and minimum received',
+      'Testnets first, plus labeled Ethereum, Base, Polygon, Arbitrum, Optimism and Sui',
+      'Route checks, approval allowlists, CSRF, rate limits and local-only history',
     ],
   },
   {
@@ -44,12 +46,13 @@ const builds: Build[] = [
     href: 'https://github.com/Arafat128/defi-autopilot',
     display: 'github.com/Arafat128/defi-autopilot',
     description:
-      'A local-first DeFi automation agent on human.tech WaaP with a dashboard for rules and privileges plus a worker that evaluates prices and executes through waap-cli.',
+      'Local-first DeFi automation on human.tech WaaP: a dashboard for rules and privileges plus a worker that watches prices and executes through waap-cli.',
     details: [
-      'Dashboard creates instant, limit-order, scheduled and bridge rules, mints encrypted WaaP Privileges and edits policy without directly executing transactions.',
-      'Worker loops every 30s after a 60s cooldown, starts in dry-run by default and sends through waap-cli when live.',
-      'Safety layers include a $25 per-transaction app cap, 50 executed transactions per 24h, contract and recipient whitelists, AES-256-GCM privilege storage and native WaaP approvals.',
-      'Routing uses Sepolia Uniswap v3 SwapRouter02 0x3bFA4769FB09eefC5a80d6E87c3B9C650f7Ae48E for demo swaps and LI.FI Diamond 0x1231DEB6f5749EF6cE6943a275A1D3E7486F4EaE for mainnet-ready swaps/bridges; Sui is send-only.',
+      'Instant, limit-order, scheduled and bridge rules from the dashboard',
+      'Worker loops every 30s after a 60s cooldown; dry-run is on by default',
+      '$25 per-tx cap, daily tx limit, and contract/recipient whitelists',
+      'Privileges stored AES-256-GCM; risky txs wait for Telegram Approve/Deny',
+      'Uniswap v3 on Sepolia for demo swaps; LI.FI for mainnet-ready routing',
     ],
   },
   {
@@ -58,12 +61,13 @@ const builds: Build[] = [
     href: 'https://github.com/Arafat128/VoiceSense-PD',
     display: 'github.com/Arafat128/VoiceSense-PD',
     description:
-      "An explainable machine-learning research app for voice-based Parkinson's disease screening with live microphone or audio upload workflows and English and Bangla analysis modes.",
+      "Explainable voice-based Parkinson's screening with live mic or upload, English and Bangla modes, and a conservative three-band decision policy.",
     details: [
-      'The Streamlit voice studio normalizes recordings in memory, extracts clinical acoustic features and explains cues that favor PD, healthy or uncertain results.',
-      'A feature lab supports UCI Parkinsons English and BenSParX Bengali data with subject-aware Random Forest and RBF-SVM models, saved metrics and sample validation.',
-      'The live model uses a conservative three-band policy: healthy at about 42% or below, uncertain in the middle and possible PD only at about 72% or above.',
-      'Built with Python, Streamlit, scikit-learn, librosa, Praat Parselmouth, pandas and SciPy. It is research screening support only, not a medical diagnosis.',
+      'Live microphone or audio upload, processed in memory',
+      'English and Bangla UI with explainable PD, healthy or uncertain cues',
+      'Feature lab on UCI Parkinsons English and BenSParX Bengali datasets',
+      'Conservative bands: healthy ≤42%, uncertain middle, possible PD ≥72%',
+      'Python, Streamlit, scikit-learn and librosa — research only, not a diagnosis',
     ],
   },
 ];
@@ -92,14 +96,14 @@ const BuildSection = () => {
         </p>
       </FadeIn>
 
-      <div className="mx-auto grid max-w-7xl gap-5 sm:gap-6 md:grid-cols-2">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-stretch gap-5 sm:gap-6 md:grid-cols-2">
         {builds.map((build, index) => (
-          <FadeIn key={build.number} delay={index * 0.1} y={30}>
+          <FadeIn key={build.number} delay={index * 0.08} y={30} className="h-full">
             <a
               href={build.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex h-full min-h-[560px] flex-col rounded-[32px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-6 text-[#D7E2EA] transition-all duration-300 hover:-translate-y-1 hover:bg-[#D7E2EA]/10 sm:p-8 md:rounded-[42px]"
+              className="group flex h-full flex-col rounded-[32px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-6 text-[#D7E2EA] transition-all duration-300 hover:-translate-y-1 hover:bg-[#D7E2EA]/10 sm:p-8 md:rounded-[42px]"
             >
               <div className="flex items-start justify-between gap-4">
                 <span
@@ -113,34 +117,40 @@ const BuildSection = () => {
                 </span>
               </div>
 
-              <div className="mt-12 flex flex-1 flex-col gap-4">
-                <h3
-                  className="font-medium uppercase leading-tight"
-                  style={{ fontSize: 'clamp(1.35rem, 3vw, 2.5rem)' }}
-                >
-                  {build.name}
-                </h3>
-                <p
-                  className="font-light leading-relaxed text-[#D7E2EA]/75"
-                  style={{ fontSize: 'clamp(0.9rem, 1.35vw, 1.08rem)' }}
-                >
-                  {build.description}
-                </p>
-                <ul className="flex flex-col gap-2 border-t border-[#D7E2EA]/15 pt-4">
-                  {build.details.map((detail) => (
-                    <li
-                      key={detail}
-                      className="break-words font-light leading-relaxed text-[#D7E2EA]/60"
-                      style={{ fontSize: 'clamp(0.78rem, 1.1vw, 0.95rem)' }}
+              <h3
+                className="mt-8 min-h-[2.5em] font-medium uppercase leading-tight"
+                style={{ fontSize: 'clamp(1.35rem, 3vw, 2.4rem)' }}
+              >
+                {build.name}
+              </h3>
+
+              <p
+                className="mt-3 min-h-[4.8em] font-light leading-relaxed text-[#D7E2EA]/75"
+                style={{ fontSize: 'clamp(0.92rem, 1.3vw, 1.05rem)' }}
+              >
+                {build.description}
+              </p>
+
+              <ul className="mt-6 flex flex-1 flex-col gap-2.5 border-t border-[#D7E2EA]/15 pt-5">
+                {build.details.map((detail) => (
+                  <li
+                    key={detail}
+                    className="grid grid-cols-[10px_minmax(0,1fr)] items-start gap-3"
+                  >
+                    <span className="mt-[0.55em] h-1.5 w-1.5 shrink-0 rounded-full bg-[#D7E2EA]/55" />
+                    <span
+                      className="font-light leading-relaxed text-[#D7E2EA]/65"
+                      style={{ fontSize: 'clamp(0.82rem, 1.05vw, 0.95rem)' }}
                     >
                       {detail}
-                    </li>
-                  ))}
-                </ul>
-                <span className="break-all text-sm font-medium text-[#D7E2EA]/50 transition-colors duration-300 group-hover:text-[#D7E2EA]">
-                  {build.display}
-                </span>
-              </div>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+
+              <span className="mt-auto border-t border-[#D7E2EA]/15 pt-4 text-sm font-medium text-[#D7E2EA]/50 transition-colors duration-300 group-hover:text-[#D7E2EA]">
+                {build.display}
+              </span>
             </a>
           </FadeIn>
         ))}
@@ -150,4 +160,3 @@ const BuildSection = () => {
 };
 
 export default BuildSection;
-

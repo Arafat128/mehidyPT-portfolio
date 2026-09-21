@@ -15,45 +15,45 @@ const services = [
   },
   {
     number: '03',
-    name: 'Testing products and provide feedback',
-    description:
-      'Hands-on testing of products and features, reporting bugs and sharing detailed, actionable feedback to help teams ship a polished experience.',
-  },
-  {
-    number: '04',
-    name: 'Compete for gaming events',
-    description:
-      'Representing the brand in competitive gaming events and tournaments, bringing skill, visibility and energy to every match.',
-  },
-  {
-    number: '05',
-    name: 'Web app development',
-    description:
-      'Designing and building fast, responsive web apps end-to-end — from clean, modern interfaces to the logic and infrastructure that power them.',
-  },
-  {
-    number: '06',
     name: 'Tools & automation',
     description:
       'Building custom tools, scripts and automations that remove repetitive work, streamline workflows and save teams real time.',
   },
   {
-    number: '07',
-    name: 'AI agents',
+    number: '04',
+    name: 'Work as support team',
     description:
-      'Designing and shipping AI agents that reason, use tools and automate complex tasks — tailored to real product and workflow needs.',
+      'Supporting users as part of the team, answering questions, resolving issues quickly and making sure everyone has a smooth experience.',
   },
   {
-    number: '08',
+    number: '05',
     name: 'Discord bots',
     description:
       'Developing custom Discord bots for moderation, engagement and automation — keeping communities active, organized and running smoothly.',
   },
   {
-    number: '09',
-    name: 'Work as support team',
+    number: '06',
+    name: 'AI agents',
     description:
-      'Supporting users as part of the team, answering questions, resolving issues quickly and making sure everyone has a smooth experience.',
+      'Designing and shipping AI agents that reason, use tools and automate complex tasks — tailored to real product and workflow needs.',
+  },
+  {
+    number: '07',
+    name: 'Web app development',
+    description:
+      'Designing and building fast, responsive web apps end-to-end — from clean, modern interfaces to the logic and infrastructure that power them.',
+  },
+  {
+    number: '08',
+    name: 'Testing products and provide feedback',
+    description:
+      'Hands-on testing of products and features, reporting bugs and sharing detailed, actionable feedback to help teams ship a polished experience.',
+  },
+  {
+    number: '09',
+    name: 'Compete for gaming events',
+    description:
+      'Representing the brand in competitive gaming events and tournaments, bringing skill, visibility and energy to every match.',
   },
 ];
 
